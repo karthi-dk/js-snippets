@@ -1,4 +1,11 @@
 # js-snippets
 
 ### Flatten Array
-[a link](https://github.com/karthi-dk/js-snippets/blob/main/arrayFlat.js)
+```
+function flatten(a) {
+    return Array.isArray(a) ? [].concat(...a.map(flatten)) : a;
+}
+
+console.log(flatten([[1,2], [2,3,4, [5,6]]]))
+```
+[Solution](https://github.com/karthi-dk/js-snippets/blob/main/arrayFlat.js)
