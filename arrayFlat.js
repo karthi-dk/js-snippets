@@ -1,3 +1,6 @@
+//solution 1
+
+
 function flatten(a) {
     return Array.isArray(a) ? [].concat(...a.map(flatten)) : a;
 }
